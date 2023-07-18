@@ -1,0 +1,89 @@
+  /* Work sans font form google fonts */
+  @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Work+Sans:wght@400;500;600;700;800&display=swap');
+
+  * {
+      font-family: 'Lato', sans-serif;
+      font-family: 'Work Sans', sans-serif;
+      margin: 0;
+      padding: 0;
+  }
+
+  /* common shared style start */
+
+  /* Nav section style start */
+  .nav-section {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      background: #FFF;
+      box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
+      padding: 35px 0;
+  }
+
+  .logo-text {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
+
+  .logo {
+      width: 86.041px;
+      height: 40px;
+  }
+
+  .main-title {
+      color: #0B0223;
+      font-size: 2.8rem;
+      font-weight: 700;
+      margin-left: 10px;
+  }
+
+  .main-title span {
+      color: #FF42A5;
+  }
+
+  .menu-items {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+  }
+
+  .menu-items a {
+      text-decoration: none;
+      color: #3C354F;
+      text-align: center;
+      font-size: 1.12rem;
+      font-weight: 500;
+  }
+
+  .follow {
+      border-radius: 8px;
+      background-color: rgba(11, 2, 35, 0.10);
+      padding: 10px 20px;
+  }
+
+  .fa-youtube {
+      color: red;
+      margin: 0 5px;
+  }
+
+  /* Nav section style end */
+
+  
+  /* responsive style media queries */
+  /* Mobile devices related style */
+
+  @media screen and (max-width: 576px){
+    .nav-section{
+        flex-direction: column;
+    }
+    .menu-items{
+        flex-direction: column;
+    }
+    .logo-text{
+        margin-bottom: 20px;
+    }
+
+
+
+  }
