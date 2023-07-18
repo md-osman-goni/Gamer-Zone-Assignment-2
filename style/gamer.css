@@ -9,6 +9,33 @@
   }
 
   /* common shared style start */
+  .common-title {
+      color: #0B0223;
+      font-size: 2.8rem;
+      font-weight: 700;
+  }
+
+  .common-title-color {
+      color: #E84BBC;
+  }
+
+  .common-description {
+      color: #534C64;
+      font-size: 1rem;
+      line-height: 30px;
+  }
+
+  .common-btn {
+      background-color: #FF42A5;
+      border: none;
+      border-radius: 25px;
+      color: white;
+      padding: 15px 25px;
+      margin: 30px 0;
+      font-size: 1.12rem;
+      font-weight: 500;
+
+  }
 
   /* Nav section style start */
   .nav-section {
@@ -69,20 +96,82 @@
 
   /* Nav section style end */
 
-  
+  /* banner section related style start */
+  .banner-container {
+      display: flex;
+      justify-content: space-between;
+  }
+
+  .banner-content {
+      background-image: url(/images/Group\ 14.png);
+      padding: 100px 300px 80px 100px;
+  }
+
+  .banner-sub-title {
+      color: #0B0223;
+      text-align: center;
+      font-size: 2.8rem;
+      font-weight: 600;
+      text-transform: uppercase;
+  }
+
+  .banner-goat {
+      text-align: center;
+      font-size: 6rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      color: #E84BBC;
+  }
+
+  .banner-description {
+      color: #534C64;
+      font-size: 1.125rem;
+      font-weight: 500;
+      text-transform: lowercase;
+      line-height: 1.5;
+      margin-left: 25px;
+  }
+
+  .btn-two-banner {
+      background-color: #4EC5F7;
+      margin-left: 20px;
+  }
+
+  .banner-image-container {
+    padding-right: 50px;
+  }
+
+  .banner-image {
+    width: 100%;
+  }
+
+  /* banner section related style end */
+
+
   /* responsive style media queries */
   /* Mobile devices related style */
 
-  @media screen and (max-width: 576px){
-    .nav-section{
-        flex-direction: column;
-    }
-    .menu-items{
-        flex-direction: column;
-    }
-    .logo-text{
-        margin-bottom: 20px;
-    }
+  @media screen and (max-width: 576px) {
+      .nav-section {
+          flex-direction: column;
+      }
+
+      .menu-items {
+          flex-direction: column;
+      }
+
+      .logo-text {
+          margin-bottom: 20px;
+      }
+      .banner-container{
+        flex-direction: column-reverse;
+      }
+      .banner-content{
+        padding: 80px 20px 80px 20px;
+      }
+      .banner-image-container {
+        padding-right: 0;
+      }
 
 
 
