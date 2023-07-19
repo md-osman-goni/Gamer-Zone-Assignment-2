@@ -223,18 +223,18 @@
 
   /* icon section style start */
   .icon-container {
-    width: 90%;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    row-gap: 25px;
-    column-gap: 3px;
+      width: 90%;
+      margin: 0 auto 60px auto;
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      row-gap: 25px;
+      column-gap: 3px;
   }
 
-  .icon-box{
-    display: flex;
-    align-items: center;
-    gap: 10px;
+  .icon-box {
+      display: flex;
+      align-items: center;
+      gap: 10px;
   }
 
   .icon-title {
@@ -244,6 +244,71 @@
   }
 
   /* icon section style end */
+
+  /* footer related style start */
+  .footer-section {
+      background-color: #0B0223;
+      height: 400px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .footer-container {}
+
+  .footer-logo-text {
+      display: flex;
+      justify-content: center;
+  }
+
+  .footer-logo-text h1 {
+      color: white;
+  }
+
+  .footer-list {
+      margin-top: 50px;
+  }
+
+  .footer-list a {
+      text-decoration: none;
+      color: #FFF;
+      font-size: 1.1rem;
+      font-weight: 600;
+      padding: 20px;
+  }
+
+  .footer-icon-list {
+      text-align: center;
+      margin-top: 40px;
+  }
+
+  .footer-icon-list a {
+      text-decoration: none;
+      color: white;
+      font-size: 1.5rem;
+      padding: 30px;
+  }
+
+  .footer-second-list {
+      text-align: center;
+      margin-top: 30px;
+  }
+
+  .footer-second-list a {
+      text-decoration: none;
+      color: #AFAFAF;
+      padding: 20px;
+
+  }
+
+  .copy {
+      color: rgba(255, 255, 255, 0.60);
+      text-align: center;
+      font-weight: 500;
+      margin-top: 20px;
+  }
+
+  /* footer related style start */
 
 
   /* responsive style media queries */
@@ -297,9 +362,10 @@
           top: -150px;
           left: -40px;
       }
-      .icon-container{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
+
+      .icon-container {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
       }
 
 
