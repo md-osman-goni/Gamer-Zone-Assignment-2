@@ -36,6 +36,14 @@
       margin: 30px 0;
       font-size: 1.12rem;
       font-weight: 500;
+      text-transform: uppercase;
+
+  }
+
+  .common-color{
+    background-image: linear-gradient(to bottom, #FF42A5, #4EC5F7);
+    color: transparent;
+    -webkit-background-clip: text;
 
   }
 
@@ -101,12 +109,22 @@
   /* banner section related style start */
   .banner-container {
       display: flex;
-      justify-content: space-between;
+      gap: 50px;
   }
 
-  .banner-content {
+  .banner-content-container {
       background-image: url(/images/Group\ 14.png);
-      padding: 100px 250px 80px 100px;
+      background-repeat: no-repeat;
+      background-size:100% 100%;
+      width: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto;
+      
+  }
+  .banner-content{
+
   }
 
   .banner-sub-title {
@@ -122,25 +140,20 @@
       font-size: 6rem;
       font-weight: 800;
       text-transform: uppercase;
-      color: #E84BBC;
   }
-
-  .banner-description {
-      color: #534C64;
-      font-size: 1.125rem;
-      font-weight: 500;
-      text-transform: lowercase;
-      line-height: 1.5;
-      margin-left: 25px;
+  .banner-description{
+    color: #534C64;
+    font-size: 1.25rem;
+    font-weight: 500;
+    text-transform: lowercase;
   }
-
-  .btn-two-banner {
-      background-color: #4EC5F7;
-      margin-left: 20px;
-  }
+.banner-btn{
+    margin-right: 15px;
+}
 
   .banner-image-container {
-      padding-right: 50px;
+    max-width: 650px;
+    margin: 0 auto;
   }
 
   .banner-image {
@@ -158,11 +171,6 @@
   .online-h-p {
       text-align: center;
   }
-
-  .online-h-p h2 span {
-      color: #E84BBC;
-  }
-
   .online-h-p p {
       margin-top: 10px;
   }
@@ -387,9 +395,8 @@
       .banner-container {
           flex-direction: column-reverse;
       }
-
-      .banner-content {
-          padding: 80px 20px 80px 20px;
+      .banner-content-container{
+          width: 100%;
       }
 
       .banner-image-container {
@@ -436,6 +443,9 @@
     }
     .banner-container {
         flex-direction: column-reverse;
+    }
+    .banner-content-container{
+        width: 100%;
     }
     .online-card-container{
         display: grid;
